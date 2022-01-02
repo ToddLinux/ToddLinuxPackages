@@ -1,0 +1,1460 @@
+{
+    "packages": [
+        {
+            "name": "binutils",
+            "version": "2.36.1",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/binutils/binutils-2.36.1.tar.xz",
+                    "checksum": "628d490d976d8957279bbbff06cf29d4"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "gcc",
+            "version": "10.2.0",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/gcc/gcc-10.2.0/gcc-10.2.0.tar.xz",
+                    "checksum": "e9fd9b1789155ad09bcf3ae747596b50"
+                },
+                {
+                    "url": "https://www.mpfr.org/mpfr-4.1.0/mpfr-4.1.0.tar.xz",
+                    "checksum": "bdd3d5efba9c17da8d83a35ec552baef"
+                },
+                {
+                    "url": "https://ftp.gnu.org/gnu/gmp/gmp-6.2.1.tar.xz",
+                    "checksum": "0b82665c4a92fd2ade7440c13fcaa42b"
+                },
+                {
+                    "url": "https://ftp.gnu.org/gnu/mpc/mpc-1.2.1.tar.gz",
+                    "checksum": "9f16c976c25bb0f76b50be749cd7a3a8"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "linux_headers",
+            "version": "5.10.17",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.10.17.tar.xz",
+                    "checksum": "4908707ed841923d8d1814130d5c380f"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "glibc",
+            "version": "2.33",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/glibc/glibc-2.33.tar.xz",
+                    "checksum": "390bbd889c7e8e8a7041564cb6b27cca"
+                },
+                {
+                    "url": "https://www.linuxfromscratch.org/patches/lfs/10.1/glibc-2.33-fhs-1.patch",
+                    "checksum": "9a5997c3452909b1769918c759eff8a2"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "libstdcpp",
+            "version": "10.2.0",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/gcc/gcc-10.2.0/gcc-10.2.0.tar.xz",
+                    "checksum": "e9fd9b1789155ad09bcf3ae747596b50"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "m4",
+            "version": "1.4.18",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/m4/m4-1.4.18.tar.xz",
+                    "checksum": "730bb15d96fffe47e148d1e09235af82"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "ncurses",
+            "version": "6.2",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/ncurses/ncurses-6.2.tar.gz",
+                    "checksum": "e812da327b1c2214ac1aed440ea3ae8d"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "bash",
+            "version": "5.1",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/bash/bash-5.1.tar.gz",
+                    "checksum": "bb91a17fd6c9032c26d0b2b78b50aff5"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "coreutils",
+            "version": "8.32",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/coreutils/coreutils-8.32.tar.xz",
+                    "checksum": "022042695b7d5bcf1a93559a9735e668"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "diffutils",
+            "version": "3.7",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/diffutils/diffutils-3.7.tar.xz",
+                    "checksum": "4824adc0e95dbbf11dfbdfaad6a1e461"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "file",
+            "version": "5.39",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "http://ftp.astron.com/pub/file/file-5.39.tar.gz",
+                    "checksum": "1c450306053622803a25647d88f80f25"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "findutils",
+            "version": "4.8.0",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/findutils/findutils-4.8.0.tar.xz",
+                    "checksum": "eeefe2e6380931a77dfa6d9350b43186"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "gawk",
+            "version": "5.1.0",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/gawk/gawk-5.1.0.tar.xz",
+                    "checksum": "8470c34eeecc41c1aa0c5d89e630df50"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "grep",
+            "version": "3.6",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/grep/grep-3.6.tar.xz",
+                    "checksum": "f47fe27049510b2249dba7f862ac1b51"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "gzip",
+            "version": "1.10",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/gzip/gzip-1.10.tar.xz",
+                    "checksum": "691b1221694c3394f1c537df4eee39d3"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "make",
+            "version": "4.3",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/make/make-4.3.tar.gz",
+                    "checksum": "fc7a67ea86ace13195b0bce683fd4469"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "patch",
+            "version": "2.7.6",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/patch/patch-2.7.6.tar.xz",
+                    "checksum": "78ad9937e4caadcba1526ef1853730d5"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "sed",
+            "version": "4.8",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/sed/sed-4.8.tar.xz",
+                    "checksum": "6d906edfdb3202304059233f51f9a71d"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "tar",
+            "version": "1.34",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/tar/tar-1.34.tar.xz",
+                    "checksum": "9a08d29a9ac4727130b5708347c0f5cf"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "xz",
+            "version": "5.2.5",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://tukaani.org/xz/xz-5.2.5.tar.xz",
+                    "checksum": "aa1621ec7013a19abab52a8aff04fe5b"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "binutils",
+            "version": "2.36.1",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/binutils/binutils-2.36.1.tar.xz",
+                    "checksum": "628d490d976d8957279bbbff06cf29d4"
+                }
+            ],
+            "env": "host",
+            "build_script": "binutils_pass1.sh"
+        },
+        {
+            "name": "gcc",
+            "version": "10.2.0",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/gcc/gcc-10.2.0/gcc-10.2.0.tar.xz",
+                    "checksum": "e9fd9b1789155ad09bcf3ae747596b50"
+                },
+                {
+                    "url": "https://www.mpfr.org/mpfr-4.1.0/mpfr-4.1.0.tar.xz",
+                    "checksum": "bdd3d5efba9c17da8d83a35ec552baef"
+                },
+                {
+                    "url": "https://ftp.gnu.org/gnu/gmp/gmp-6.2.1.tar.xz",
+                    "checksum": "0b82665c4a92fd2ade7440c13fcaa42b"
+                },
+                {
+                    "url": "https://ftp.gnu.org/gnu/mpc/mpc-1.2.1.tar.gz",
+                    "checksum": "9f16c976c25bb0f76b50be749cd7a3a8"
+                }
+            ],
+            "env": "host",
+            "build_script": "gcc_pass1.sh"
+        },
+        {
+            "name": "iproute2",
+            "version": "5.10.0",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.10.0.tar.xz",
+                    "checksum": "19ffea480a21e600453776b7225f3319"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "iana-etc",
+            "version": "20210611",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://github.com/Mic92/iana-etc/releases/download/20210611/iana-etc-20210611.tar.gz",
+                    "checksum": "f2854be57fe281e3ffc7364984467d2f"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "inetutils",
+            "version": "2.0",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/inetutils/inetutils-2.0.tar.xz",
+                    "checksum": "5e1018502cd131ed8e42339f6b5c98aa"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "zlib",
+            "version": "1.2.11",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://www.zlib.net/zlib-1.2.11.tar.xz",
+                    "checksum": "85adef240c5f370b308da8c938951a68"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "openssl",
+            "version": "1.1.1j",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://www.openssl.org/source/openssl-1.1.1j.tar.gz",
+                    "checksum": "78ad9937e4caadcba1526ef1853730d5"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "python3.7",
+            "version": "3.7.11",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://www.python.org/ftp/python/3.7.11/Python-3.7.11.tar.xz",
+                    "checksum": "b3671d35b61f5422605cedad32f3457a"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "python3-setuptools",
+            "version": "58.2.0",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://github.com/pypa/setuptools/archive/refs/tags/v58.2.0.tar.gz",
+                    "checksum": "719ea12307aede34a180c46fcaadcb61"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "python3-pip",
+            "version": "21.3.0",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://github.com/pypa/pip/archive/refs/tags/21.3.tar.gz",
+                    "checksum": "c44eac743750f93fe4616b38673ab0a3"
+                }
+            ],
+            "env": "host"
+        },
+        {
+            "name": "libstdcpp",
+            "version": "10.2.0",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/gcc/gcc-10.2.0/gcc-10.2.0.tar.xz",
+                    "checksum": "e9fd9b1789155ad09bcf3ae747596b50"
+                }
+            ],
+            "env": "chroot",
+            "build_script": "libstdcpp_pass1.sh"
+        },
+        {
+            "name": "gettext",
+            "version": "0.21",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/gettext/gettext-0.21.tar.xz",
+                    "checksum": "40996bbaf7d1356d3c22e33a8b255b31"
+                }
+            ],
+            "env": "chroot"
+        },
+        {
+            "name": "bison",
+            "version": "3.7.5",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/bison/bison-3.7.5.tar.xz",
+                    "checksum": "9b762dc24a6723f86d14d957d3deeb90"
+                }
+            ],
+            "env": "chroot"
+        },
+        {
+            "name": "perl",
+            "version": "5.32.1",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://www.cpan.org/src/5.0/perl-5.32.1.tar.xz",
+                    "checksum": "7f104064b906ad8c7329ca5e409a32d7"
+                }
+            ],
+            "env": "chroot"
+        },
+        {
+            "name": "python3.7",
+            "version": "3.7.11",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://www.python.org/ftp/python/3.7.11/Python-3.7.11.tar.xz",
+                    "checksum": "b3671d35b61f5422605cedad32f3457a"
+                }
+            ],
+            "env": "chroot",
+            "build_script": "python3.7_pass1.sh"
+        },
+        {
+            "name": "texinfo",
+            "version": "6.7",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/texinfo/texinfo-6.7.tar.xz",
+                    "checksum": "d4c5d8cc84438c5993ec5163a59522a6"
+                }
+            ],
+            "env": "chroot"
+        },
+        {
+            "name": "util-linux",
+            "version": "2.36.2",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://www.kernel.org/pub/linux/utils/util-linux/v2.36/util-linux-2.36.2.tar.xz",
+                    "checksum": "f78419af679ac9678190ad961eb3cf27"
+                }
+            ],
+            "env": "chroot"
+        },
+        {
+            "name": "man-pages",
+            "version": "5.10",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://www.kernel.org/pub/linux/docs/man-pages/man-pages-5.10.tar.xz",
+                    "checksum": "4ae3f74a1beddd919936e1058642644c"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "glibc",
+            "version": "5.10",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/glibc/glibc-2.33.tar.xz",
+                    "checksum": "390bbd889c7e8e8a7041564cb6b27cca"
+                },
+                {
+                    "url": "https://www.linuxfromscratch.org/patches/lfs/10.1/glibc-2.33-fhs-1.patch",
+                    "checksum": "9a5997c3452909b1769918c759eff8a2"
+                },
+                {
+                    "url": "https://www.iana.org/time-zones/repository/releases/tzdata2021a.tar.gz",
+                    "checksum": "20eae7d1da671c6eac56339c8df85bbd"
+                }
+            ],
+            "env": "target",
+            "build_script": "glibc_pass1.sh"
+        },
+        {
+            "name": "pkg-config",
+            "version": "0.29.2",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://pkg-config.freedesktop.org/releases/pkg-config-0.29.2.tar.gz",
+                    "checksum": "f6e931e319531b736fadc017f470e68a"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "libpipeline",
+            "version": "1.5.3",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.3.tar.gz",
+                    "checksum": "dad443d0911cf9f0f1bd90a334bc9004"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "man-db",
+            "version": "2.9.4",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://download.savannah.gnu.org/releases/man-db/man-db-2.9.4.tar.xz",
+                    "checksum": "6e233a555f7b9ae91ce7cd0faa322bce"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "zlib",
+            "version": "1.2.11",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://www.zlib.net/zlib-1.2.11.tar.xz",
+                    "checksum": "85adef240c5f370b308da8c938951a68"
+                }
+            ],
+            "env": "target",
+            "build_script": "zlib_pass1.sh"
+        },
+        {
+            "name": "bzip2",
+            "version": "1.0.8",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://www.sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
+                    "checksum": "67e051268d0c475ea773822f7500d0e5"
+                },
+                {
+                    "url": "https://www.linuxfromscratch.org/patches/lfs/10.1/bzip2-1.0.8-install_docs-1.patch",
+                    "checksum": "6a5ac7e89b791aae556de0f745916f7f"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "xz",
+            "version": "5.2.5",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://tukaani.org/xz/xz-5.2.5.tar.xz",
+                    "checksum": "aa1621ec7013a19abab52a8aff04fe5b"
+                }
+            ],
+            "env": "target",
+            "build_script": "xz_pass1.sh"
+        },
+        {
+            "name": "zstd",
+            "version": "1.4.8",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://github.com/facebook/zstd/releases/download/v1.4.8/zstd-1.4.8.tar.gz",
+                    "checksum": "e873db7cfa5ef05832e6d55a5a572840"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "file",
+            "version": "5.39",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.astron.com/pub/file/file-5.39.tar.gz",
+                    "checksum": "1c450306053622803a25647d88f80f25"
+                }
+            ],
+            "env": "target",
+            "build_script": "file_pass1.sh"
+        },
+        {
+            "name": "readline",
+            "version": "8.1",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/readline/readline-8.1.tar.gz",
+                    "checksum": "e9557dd5b1409f5d7b37ef717c64518e"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "m4",
+            "version": "1.4.18",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/m4/m4-1.4.18.tar.xz",
+                    "checksum": "730bb15d96fffe47e148d1e09235af82"
+                }
+            ],
+            "env": "target",
+            "build_script": "m4_pass1.sh"
+        },
+        {
+            "name": "bc",
+            "version": "3.3.0",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://github.com/gavinhoward/bc/releases/download/3.3.0/bc-3.3.0.tar.xz",
+                    "checksum": "452ae2d467b1d7212bb7896c0c689825"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "flex",
+            "version": "2.6.4",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz",
+                    "checksum": "2882e3179748cc9f9c23ec593d6adc8d"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "tcl",
+            "version": "8.6.11",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://downloads.sourceforge.net/tcl/tcl8.6.11-src.tar.gz",
+                    "checksum": "8a4c004f48984a03a7747e9ba06e4da4"
+                },
+                {
+                    "url": "https://downloads.sourceforge.net/tcl/tcl8.6.11-html.tar.gz",
+                    "checksum": "e358a9140c3a171e42f18c8a7f6a36ea"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "expect",
+            "version": "5.45.4",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://prdownloads.sourceforge.net/expect/expect5.45.4.tar.gz",
+                    "checksum": "00fce8de158422f5ccd2666512329bd2"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "dejagnu",
+            "version": "1.6.2",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "http://ftp.gnu.org/gnu/dejagnu/dejagnu-1.6.2.tar.gz",
+                    "checksum": "e1b07516533f351b3aba3423fafeffd6"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "binutils",
+            "version": "2.36.1",
+            "pass_idx": 2,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/binutils/binutils-2.36.1.tar.xz",
+                    "checksum": "628d490d976d8957279bbbff06cf29d4"
+                }
+            ],
+            "env": "target",
+            "build_script": "binutils_pass2.sh"
+        },
+        {
+            "name": "gmp",
+            "version": "6.2.1",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "http://ftp.gnu.org/gnu/gmp/gmp-6.2.1.tar.xz",
+                    "checksum": "0b82665c4a92fd2ade7440c13fcaa42b"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "mpfr",
+            "version": "4.1.0",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://www.mpfr.org/mpfr-4.1.0/mpfr-4.1.0.tar.xz",
+                    "checksum": "bdd3d5efba9c17da8d83a35ec552baef"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "mpc",
+            "version": "1.2.1",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/mpc/mpc-1.2.1.tar.gz",
+                    "checksum": "9f16c976c25bb0f76b50be749cd7a3a8"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "attr",
+            "version": "2.4.48",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://download.savannah.gnu.org/releases/attr/attr-2.4.48.tar.gz",
+                    "checksum": "bc1e5cb5c96d99b24886f1f527d3bb3d"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "acl",
+            "version": "2.2.53",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://download.savannah.gnu.org/releases/acl/acl-2.2.53.tar.gz",
+                    "checksum": "007aabf1dbb550bcddde52a244cd1070"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "libcap",
+            "version": "2.48",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.48.tar.xz",
+                    "checksum": "ca71693a9abe4e0ad9cc33a755ee47e0"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "shadow",
+            "version": "4.8.1",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://github.com/shadow-maint/shadow/releases/download/4.8.1/shadow-4.8.1.tar.xz",
+                    "checksum": "4b05eff8a427cf50e615bda324b5bc45"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "gcc",
+            "version": "10.2.0",
+            "pass_idx": 2,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/gcc/gcc-10.2.0/gcc-10.2.0.tar.xz",
+                    "checksum": "e9fd9b1789155ad09bcf3ae747596b50"
+                }
+            ],
+            "env": "target",
+            "build_script": "gcc_pass2.sh"
+        },
+        {
+            "name": "ncurses",
+            "version": "6.2",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/ncurses/ncurses-6.2.tar.gz",
+                    "checksum": "e812da327b1c2214ac1aed440ea3ae8d"
+                }
+            ],
+            "env": "target",
+            "build_script": "ncurses_pass1.sh"
+        },
+        {
+            "name": "sed",
+            "version": "4.8",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/sed/sed-4.8.tar.xz",
+                    "checksum": "6d906edfdb3202304059233f51f9a71d"
+                }
+            ],
+            "env": "target",
+            "build_script": "sed_pass1.sh"
+        },
+        {
+            "name": "psmisc",
+            "version": "23.4",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://sourceforge.net/projects/psmisc/files/psmisc/psmisc-23.4.tar.xz",
+                    "checksum": "8114cd4489b95308efe2509c3a406bbf"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "gettext",
+            "version": "0.21",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/gettext/gettext-0.21.tar.xz",
+                    "checksum": "40996bbaf7d1356d3c22e33a8b255b31"
+                }
+            ],
+            "env": "target",
+            "build_script": "gettext_pass1.sh"
+        },
+        {
+            "name": "bison",
+            "version": "3.7.5",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/bison/bison-3.7.5.tar.xz",
+                    "checksum": "9b762dc24a6723f86d14d957d3deeb90"
+                }
+            ],
+            "env": "target",
+            "build_script": "bison_pass1.sh"
+        },
+        {
+            "name": "grep",
+            "version": "3.6",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/grep/grep-3.6.tar.xz",
+                    "checksum": "f47fe27049510b2249dba7f862ac1b51"
+                }
+            ],
+            "env": "target",
+            "build_script": "grep_pass1.sh"
+        },
+        {
+            "name": "bash",
+            "version": "5.1",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/bash/bash-5.1.tar.gz",
+                    "checksum": "bb91a17fd6c9032c26d0b2b78b50aff5"
+                }
+            ],
+            "env": "target",
+            "build_script": "bash_pass1.sh"
+        },
+        {
+            "name": "libtool",
+            "version": "2.4.6",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "http://ftp.gnu.org/gnu/libtool/libtool-2.4.6.tar.xz",
+                    "checksum": "1bfb9b923f2c1339b4d2ce1807064aa5"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "gdbm",
+            "version": "1.19",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "http://ftp.gnu.org/gnu/gdbm/gdbm-1.19.tar.gz",
+                    "checksum": "aeb29c6a90350a4c959cd1df38cd0a7e"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "gperf",
+            "version": "3.1",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "http://ftp.gnu.org/gnu/gperf/gperf-3.1.tar.gz",
+                    "checksum": "9e251c0a618ad0824b51117d5d9db87e"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "expat",
+            "version": "2.4.1",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://prdownloads.sourceforge.net/expat/expat-2.4.1.tar.xz",
+                    "checksum": "e0fe49a6b3480827c9455e4cfc799133"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "inetutils",
+            "version": "2.0",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/inetutils/inetutils-2.0.tar.xz",
+                    "checksum": "5e1018502cd131ed8e42339f6b5c98aa"
+                }
+            ],
+            "env": "target",
+            "build_script": "inetutils_pass1.sh"
+        },
+        {
+            "name": "perl",
+            "version": "5.32.1",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://www.cpan.org/src/5.0/perl-5.32.1.tar.xz",
+                    "checksum": "7f104064b906ad8c7329ca5e409a32d7"
+                }
+            ],
+            "env": "target",
+            "build_script": "perl_pass1.sh"
+        },
+        {
+            "name": "xmlparser",
+            "version": "2.46",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.46.tar.gz",
+                    "checksum": "80bb18a8e6240fcf7ec2f7b57601c170"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "intltool",
+            "version": "0.51.0",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
+                    "checksum": "12e517cac2b57a0121cda351570f1e63"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "autoconf",
+            "version": "2.71",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "http://ftp.gnu.org/gnu/autoconf/autoconf-2.71.tar.xz",
+                    "checksum": "12cfa1687ffa2606337efe1a64416106"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "automake",
+            "version": "1.16.3",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "http://ftp.gnu.org/gnu/automake/automake-1.16.3.tar.xz",
+                    "checksum": "c27f608a4e1f302ec7ce42f1251c184e"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "kmod",
+            "version": "28",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-28.tar.xz",
+                    "checksum": "0a2b887b1b3dfb8c0b3f41f598203e56"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "libelf",
+            "version": "0.183",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://sourceware.org/ftp/elfutils/0.183/elfutils-0.183.tar.bz2",
+                    "checksum": "6f58aa1b9af1a5681b1cbf63e0da2d67"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "libffi",
+            "version": "3.3",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://sourceware.org/pub/libffi/libffi-3.3.tar.gz",
+                    "checksum": "6313289e32f1d38a9df4770b014a2ca7"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "openssl",
+            "version": "1.1.1j",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://www.openssl.org/source/openssl-1.1.1j.tar.gz",
+                    "checksum": "78ad9937e4caadcba1526ef1853730d5"
+                }
+            ],
+            "env": "target",
+            "build_script": "openssl_pass1.sh"
+        },
+        {
+            "name": "python3.7",
+            "version": "3.7.11",
+            "pass_idx": 2,
+            "src_urls": [
+                {
+                    "url": "https://www.python.org/ftp/python/3.7.11/Python-3.7.11.tar.xz",
+                    "checksum": "b3671d35b61f5422605cedad32f3457a"
+                },
+                {
+                    "url": "https://www.python.org/ftp/python/doc/3.7.11/python-3.7.11-docs-html.tar.bz2",
+                    "checksum": "72f7dfcc150ef1c7258b02fc31bff57c"
+                }
+            ],
+            "env": "target",
+            "build_script": "python3_pass2.sh"
+        },
+        {
+            "name": "coreutils",
+            "version": "8.32",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/coreutils/coreutils-8.32.tar.xz",
+                    "checksum": "022042695b7d5bcf1a93559a9735e668"
+                },
+                {
+                    "url": "https://www.linuxfromscratch.org/patches/lfs/10.1/coreutils-8.32-i18n-1.patch",
+                    "checksum": "cd8ebed2a67fff2e231026df91af6776"
+                }
+            ],
+            "env": "target",
+            "build_script": "coreutils_pass1.sh"
+        },
+        {
+            "name": "check",
+            "version": "0.15.2",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://github.com/libcheck/check/releases/download/0.15.2/check-0.15.2.tar.gz",
+                    "checksum": "50fcafcecde5a380415b12e9c574e0b2"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "diffutils",
+            "version": "3.7",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/diffutils/diffutils-3.7.tar.xz",
+                    "checksum": "4824adc0e95dbbf11dfbdfaad6a1e461"
+                }
+            ],
+            "env": "target",
+            "build_script": "diffutils_pass1.sh"
+        },
+        {
+            "name": "gawk",
+            "version": "5.1.0",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/gawk/gawk-5.1.0.tar.xz",
+                    "checksum": "8470c34eeecc41c1aa0c5d89e630df50"
+                }
+            ],
+            "env": "target",
+            "build_script": "gawk_pass1.sh"
+        },
+        {
+            "name": "findutils",
+            "version": "4.8.0",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/findutils/findutils-4.8.0.tar.xz",
+                    "checksum": "eeefe2e6380931a77dfa6d9350b43186"
+                }
+            ],
+            "env": "target",
+            "build_script": "findutils_pass1.sh"
+        },
+        {
+            "name": "groff",
+            "version": "1.22.4",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "http://ftp.gnu.org/gnu/groff/groff-1.22.4.tar.gz",
+                    "checksum": "08fb04335e2f5e73f23ea4c3adbf0c5f"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "grub",
+            "version": "2.04",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/grub/grub-2.04.tar.xz",
+                    "checksum": "5aaca6713b47ca2456d8324a58755ac7"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "less",
+            "version": "563",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://www.greenwoodsoftware.com/less/less-563.tar.gz",
+                    "checksum": "1ee44fa71447a845f6eef5b3f38d2781"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "gzip",
+            "version": "1.10",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/gzip/gzip-1.10.tar.xz",
+                    "checksum": "691b1221694c3394f1c537df4eee39d3"
+                }
+            ],
+            "env": "target",
+            "build_script": "gzip_pass1.sh"
+        },
+        {
+            "name": "iproute2",
+            "version": "5.10.0",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.10.0.tar.xz",
+                    "checksum": "19ffea480a21e600453776b7225f3319"
+                }
+            ],
+            "env": "target",
+            "build_script": "iproute2_pass1.sh"
+        },
+        {
+            "name": "kbd",
+            "version": "2.4.0",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://www.kernel.org/pub/linux/utils/kbd/kbd-2.4.0.tar.xz",
+                    "checksum": "3cac5be0096fcf7b32dcbd3c53831380"
+                },
+                {
+                    "url": "https://www.linuxfromscratch.org/patches/lfs/10.1/kbd-2.4.0-backspace-1.patch",
+                    "checksum": "f75cca16a38da6caa7d52151f7136895"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "make",
+            "version": "4.3",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/make/make-4.3.tar.gz",
+                    "checksum": "fc7a67ea86ace13195b0bce683fd4469"
+                }
+            ],
+            "env": "target",
+            "build_script": "make_pass1.sh"
+        },
+        {
+            "name": "patch",
+            "version": "2.7.6",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/patch/patch-2.7.6.tar.xz",
+                    "checksum": "78ad9937e4caadcba1526ef1853730d5"
+                }
+            ],
+            "env": "target",
+            "build_script": "patch_pass1.sh"
+        },
+        {
+            "name": "tar",
+            "version": "1.34",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/tar/tar-1.34.tar.xz",
+                    "checksum": "9a08d29a9ac4727130b5708347c0f5cf"
+                }
+            ],
+            "env": "target",
+            "build_script": "tar_pass1.sh"
+        },
+        {
+            "name": "texinfo",
+            "version": "6.7",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://ftp.gnu.org/gnu/texinfo/texinfo-6.7.tar.xz",
+                    "checksum": "d4c5d8cc84438c5993ec5163a59522a6"
+                }
+            ],
+            "env": "target",
+            "build_script": "texinfo_pass1.sh"
+        },
+        {
+            "name": "vim",
+            "version": "8.2.2433",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://anduin.linuxfromscratch.org/LFS/vim-8.2.2433.tar.gz",
+                    "checksum": "a26555c8919cf40938d2428d834bf913"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "eudev",
+            "version": "3.2.10",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://dev.gentoo.org/~blueness/eudev/eudev-3.2.10.tar.gz",
+                    "checksum": "60b135a189523f333cea5f71a3345c8d"
+                },
+                {
+                    "url": "https://anduin.linuxfromscratch.org/LFS/udev-lfs-20171102.tar.xz",
+                    "checksum": "27cd82f9a61422e186b9d6759ddf1634"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "procps-ng",
+            "version": "3.3.17",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-3.3.17.tar.xz",
+                    "checksum": "d60613e88c2f442ebd462b5a75313d56"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "util-linux",
+            "version": "3.3.17",
+            "pass_idx": 1,
+            "src_urls": [
+                {
+                    "url": "https://www.kernel.org/pub/linux/utils/util-linux/v2.36/util-linux-2.36.2.tar.xz",
+                    "checksum": "f78419af679ac9678190ad961eb3cf27"
+                }
+            ],
+            "env": "target",
+            "build_script": "util-linux_pass1.sh"
+        },
+        {
+            "name": "e2fsprogs",
+            "version": "1.46.1",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://downloads.sourceforge.net/project/e2fsprogs/e2fsprogs/v1.46.1/e2fsprogs-1.46.1.tar.gz",
+                    "checksum": "8c52585522b7ca6bdae2bdecba27b3a4"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "sysklogd",
+            "version": "1.5.1",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://www.infodrom.org/projects/sysklogd/download/sysklogd-1.5.1.tar.gz",
+                    "checksum": "c70599ab0d037fde724f7210c2c8d7f8"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "sysvinit",
+            "version": "2.98",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://download.savannah.gnu.org/releases/sysvinit/sysvinit-2.98.tar.xz",
+                    "checksum": "e3254f7622ea5cf2322b1b386a98ba59"
+                },
+                {
+                    "url": "https://www.linuxfromscratch.org/patches/lfs/10.1/sysvinit-2.98-consolidated-1.patch",
+                    "checksum": "4900322141d493e74020c9cf437b2cdc"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "live_cd_lfs_bootscripts",
+            "version": "20210201",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "http://www.linuxfromscratch.org/lfs/downloads/10.1/lfs-bootscripts-20210201.tar.xz",
+                    "checksum": "1fc441ef96c522974f7267dec8b40a47"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "blfs_bootscripts",
+            "version": "20210826",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20210826.tar.xz",
+                    "checksum": "6db4b0da28edc5e1b2819af32d5b02bb"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "dhcpcd",
+            "version": "9.4.0",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://roy.marples.name/downloads/dhcpcd/dhcpcd-9.4.0.tar.xz",
+                    "checksum": "c36715fc629bc40aa94aae06fa1724c2"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "dhcp",
+            "version": "4.4.2-P1",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://ftp.isc.org/isc/dhcp/4.4.2-P1/dhcp-4.4.2-P1.tar.gz",
+                    "checksum": "3089a1ebd20a802ec0870ae337d43907"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "kernel",
+            "version": "5.10.17",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.10.17.tar.xz",
+                    "checksum": "4908707ed841923d8d1814130d5c380f"
+                },
+                {
+                    "url": "https://github.com/ToddLinux/kernel_config/releases/download/v0.1.1/default.config",
+                    "checksum": "b83d8b93569784536f39bc9695cce6aa"
+                }
+            ],
+            "env": "target"
+        },
+        {
+            "name": "isolinux",
+            "version": "6.03",
+            "pass_idx": 0,
+            "src_urls": [
+                {
+                    "url": "https://kernel.org/pub/linux/utils/boot/syslinux/6.xx/syslinux-6.03.tar.gz",
+                    "checksum": "8bdb4d6faf54001b3456d69e02a870c0"
+                }
+            ],
+            "env": "target"
+        }
+    ]
+}
