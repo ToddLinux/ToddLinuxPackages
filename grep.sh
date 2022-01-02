@@ -9,14 +9,12 @@ unpack_src() {
 }
 
 configure() {
-    ./configure --prefix=/usr   \
-                --host=$LFS_TGT \
-                --bindir=/bin
+    ./configure --prefix=/usr --bindir=/bin
     return
 }
 
 make_install() {
-    make && make DESTDIR=$TODD_FAKE_ROOT_DIR -j1 install
+    make && make check && make DESTDIR=$TODD_FAKE_ROOT_DIR -j1 install
     return
 }
 

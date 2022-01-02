@@ -3,54 +3,51 @@
 set -euo pipefail
 
 unpack_src() {
-    rm -r gcc-10.2.0 2>/dev/null
-    tar xf gcc-10.2.0.tar.xz && cd gcc-10.2.0 && \
-        tar -xf ../mpfr-4.1.0.tar.xz && mv mpfr-4.1.0 mpfr && \
-        tar -xf ../gmp-6.2.1.tar.xz && mv gmp-6.2.1 gmp && \
-        tar -xf ../mpc-1.2.1.tar.gz && mv mpc-1.2.1 mpc && \
-        sed -e '/m64=/s/lib64/lib/' -i.orig gcc/config/i386/t-linux64 && \
-        mkdir build && cd build
+    tar xf gcc-10.2.0.tar.xz && \
+    cd gcc-10.2.0
     return
 }
 
 configure() {
-    # why do you hardcode absolute paths in scripts? 
-    ../configure \
-        --target=$LFS_TGT \
-        --prefix=$LFS/tools \
-        --with-glibc-version=2.11 \
-        --with-sysroot=$LFS \
-        --with-newlib \
-        --without-headers \
-        --enable-initfini-array \
-        --disable-nls \
-        --disable-shared \
+    case $(uname -m) in
+        x86_64)
+        sed -e '/m64=/s/lib64/lib/' \
+        -i.orig gcc/config/i386/t-linux64
+        ;;
+    esac
+
+    mkdir -v build
+    cd build
+
+    ../configure --prefix=/usr \
+        LD=ld \
+        --enable-languages=c,c++ \
         --disable-multilib \
-        --disable-decimal-float \
-        --disable-threads \
-        --disable-libatomic \
-        --disable-libgomp \
-        --disable-libquadmath \
-        --disable-libssp \
-        --disable-libvtv \
-        --disable-libstdcxx \
-        --enable-languages=c,c++
+        --disable-bootstrap \
+        --with-system-zlib
+
     return
 }
 
 make_install() {
-    make && make DESTDIR=$TODD_FAKE_ROOT_DIR -j1 install
-    return
+    mkdir -p $TODD_FAKE_ROOT_DIR/{lib,usr/lib/bfd-plugins/}
+    make
+    
+    ulimit -s 32768
+
+    # chown -Rv tester .
+    # su tester -c "PATH=$PATH make -k check"
+    # ../contrib/test_summary
+    
+    make DESTDIR=$TODD_FAKE_ROOT_DIR install
+
+    rm -rf $TODD_FAKE_ROOT_DIR/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed/bits/
+    chown -v -R root:root $TODD_FAKE_ROOT_DIR/usr/lib/gcc/*linux-gnu/10.2.0/include{,-fixed}
+    ln -sv ../usr/bin/cpp $TODD_FAKE_ROOT_DIR/lib/cpp
+    ln -sfv ../../libexec/gcc/x86_64-pc-linux-gnu/10.2.0/liblto_plugin.so $TODD_FAKE_ROOT_DIR/usr/lib/bfd-plugins/
+
 }
 
-post_install() {
-    # I hate the antichrist
-    LFS_ROOT=$(ls $TODD_FAKE_ROOT_DIR)
-    mv $TODD_FAKE_ROOT_DIR/$LFS/* $TODD_FAKE_ROOT_DIR
-    rm -rv $TODD_FAKE_ROOT_DIR/$LFS_ROOT
-    cat $TODD_BUILD_DIR/gcc-10.2.0/gcc/{limitx.h,glimits.h,limity.h}\
-        > `dirname $($TODD_FAKE_ROOT_DIR/tools/bin/${LFS_TGT}-gcc -print-libgcc-file-name)`/install-tools/include/limits.h    
-    return
-}
+# TODO: test this toolchain
 
-unpack_src && configure && make_install && post_install
+unpack_src && configure && make_install

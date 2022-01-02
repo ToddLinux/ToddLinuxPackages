@@ -8,14 +8,19 @@ unpack_src() {
 }
 
 configure() {
-    ./configure --disable-shared
+    ./configure --prefix=/usr \
+        --disable-static \
+        --docdir=/usr/share/doc/gettext-0.21
+
     return
 }
 
 make_install() {
     make
-    mkdir -p $TODD_FAKE_ROOT_DIR/usr/bin
-    cp -v gettext-tools/src/{msgfmt,msgmerge,xgettext} $TODD_FAKE_ROOT_DIR/usr/bin
+    make check
+    
+    make DESTDIR=$TODD_FAKE_ROOT_DIR install
+    chmod -v 0755 $TODD_FAKE_ROOT_DIR/usr/lib/preloadable_libintl.so
 }
 
 unpack_src && configure && make_install

@@ -2,6 +2,7 @@
 #!/bin/bash
 set -euo pipefail
 
+# TODO: tests
 unpack_src() {
     tar xf coreutils-8.32.tar.xz
     cd coreutils-8.32
@@ -9,11 +10,13 @@ unpack_src() {
 }
 
 configure() {
-    ./configure --prefix=/usr                     \
-                --host=$LFS_TGT                   \
-                --build=$(build-aux/config.guess) \
-                --enable-install-program=hostname \
-                --enable-no-install-program=kill,uptime
+    patch -Np1 -i ../coreutils-8.32-i18n-1.patch
+    sed -i '/test.lock/s/^/#/' gnulib-tests/gnulib.mk
+
+    autoreconf -fiv
+    FORCE_UNSAFE_CONFIGURE=1 ./configure \
+        --prefix=/usr \
+        --enable-no-install-program=kill,uptime
     return
 }
 
@@ -32,6 +35,7 @@ post_install() {
     mkdir -pv $TODD_FAKE_ROOT_DIR/usr/share/man/man8
     mv -v $TODD_FAKE_ROOT_DIR/usr/share/man/man1/chroot.1                        $TODD_FAKE_ROOT_DIR/usr/share/man/man8/chroot.8
     sed -i 's/"1"/"8"/'                                           $TODD_FAKE_ROOT_DIR/usr/share/man/man8/chroot.8
+
     return
 }
 

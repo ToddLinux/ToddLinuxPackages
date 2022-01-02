@@ -9,15 +9,15 @@ unpack_src() {
 }
 
 configure() {
-    ./configure --prefix=/usr                     \
-                --host=$LFS_TGT                   \
-                --build=$(build-aux/config.guess) \
-                --bindir=/bin
+    FORCE_UNSAFE_CONFIGURE=1 \
+    ./configure --prefix=/usr \
+        --bindir=/bin
     return
 }
 
 make_install() {
     make && make DESTDIR=$TODD_FAKE_ROOT_DIR -j1 install
+    make -C doc install-html DESTDIR=$TODD_FAKE_ROOT_DIR docdir=/usr/share/doc/tar-1.34
     return
 }
 

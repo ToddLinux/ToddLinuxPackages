@@ -22,8 +22,13 @@ configure() {
 }
 
 make_install() {
+    mkdir $TODD_FAKE_ROOT_DIR/{bin,sbin}
     make
+    make check
     make DESTDIR=$TODD_FAKE_ROOT_DIR -j1 install
+
+    mv -v $TODD_FAKE_ROOT_DIR/usr/bin/{hostname,ping,ping6,traceroute} $TODD_FAKE_ROOT_DIR/bin
+    mv -v $TODD_FAKE_ROOT_DIR/usr/bin/ifconfig $TODD_FAKE_ROOT_DIR/sbin
     return
 }
 

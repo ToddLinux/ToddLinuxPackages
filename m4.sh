@@ -11,15 +11,12 @@ unpack_src() {
 configure() {
     sed -i 's/IO_ftrylockfile/IO_EOF_SEEN/' lib/*.c
     echo "#define _IO_IN_BACKUP 0x100" >> lib/stdio-impl.h
-
-    ./configure --prefix=/usr   \
-                --host=$LFS_TGT \
-                --build=$(build-aux/config.guess)
-    return
+    ./configure --prefix=/usr
 }
 
 make_install() {
     make
+    make check
     make DESTDIR=$TODD_FAKE_ROOT_DIR -j1 install
     return
 }

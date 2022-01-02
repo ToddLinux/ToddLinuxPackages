@@ -9,15 +9,21 @@ unpack_src() {
 }
 
 configure() {
-    ./configure --prefix=/usr                   \
-                --build=$(support/config.guess) \
-                --host=$LFS_TGT                 \
-                --without-bash-malloc
+    sed -i '/^bashline.o:.*shmbchar.h/a bashline.o: ${DEFDIR}/builtext.h' Makefile.in
+    ./configure --prefix=/usr \
+        --docdir=/usr/share/doc/bash-5.1 \
+        --without-bash-malloc \
+        --with-installed-readline
     return
 }
 
 make_install() {
-    make && make DESTDIR=$TODD_FAKE_ROOT_DIR -j1 install
+    make 
+    
+    chown -Rv tester .
+    su tester -c "PATH=$PATH make tests < $(tty)"
+
+    make DESTDIR=$TODD_FAKE_ROOT_DIR -j1 install
     return
 }
 

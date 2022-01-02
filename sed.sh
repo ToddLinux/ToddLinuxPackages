@@ -8,14 +8,21 @@ unpack_src() {
 }
 
 configure() {
-    ./configure --prefix=/usr \
-        --host=$LFS_TGT \
-        --bindir=/bin
+    ./configure --prefix=/usr --bindir=/bin
     return
 }
 
 make_install() {
-    make && make DESTDIR=$TODD_FAKE_ROOT_DIR -j1 install
+    make && make html
+
+    chown -Rv tester .
+    su tester -c "PATH=$PATH make check"
+    
+    make DESTDIR=$TODD_FAKE_ROOT_DIR -j1 install
+
+    install -d -m755 $TODD_FAKE_ROOT_DIR/usr/share/doc/sed-4.8
+    install -m644 doc/sed.html $TODD_FAKE_ROOT_DIR/usr/share/doc/sed-4.8
+
     return
 }
 

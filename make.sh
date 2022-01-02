@@ -8,10 +8,8 @@ unpack_src() {
 }
 
 configure() {
-    ./configure --prefix=/usr \
-        --without-guile \
-        --host=$LFS_TGT \
-        --build=$(build-aux/config.guess)
+    ./configure --prefix=/usr
+
     return
 }
 

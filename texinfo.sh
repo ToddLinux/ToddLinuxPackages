@@ -16,6 +16,15 @@ configure() {
 make_install() {
     make
     make DESTDIR=$TODD_FAKE_ROOT_DIR -j1 install
+    make DESTDIR=$TODD_FAKE_ROOT_DIR TEXMF=/usr/share/texmf install-tex
+
+    pushd $TODD_FAKE_ROOT_DIR/usr/share/info
+    rm -v dir
+    for f in *
+        do install-info $f dir 2>/dev/null
+    done
+    popd
+
     return
 }
 

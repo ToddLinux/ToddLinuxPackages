@@ -9,13 +9,13 @@ unpack_src() {
 }
 
 configure() {
-    ./configure --prefix=/usr \
-                --docdir=/usr/share/doc/bison-3.7.5
+    ./configure --prefix=/usr --docdir=/usr/share/doc/bison-3.7.5
     return
 }
 
 make_install() {
     make
+    make check
     make DESTDIR=$TODD_FAKE_ROOT_DIR -j1 install
     return
 }
